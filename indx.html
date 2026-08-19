@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekolah Jaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      header {
+        background-color: #838921;
+        border-bottom: solid #838921 6px;
+        border-right: #838921 6px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo-sekolah img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+      nav img {
+        width: 42px;
+        height: 45px;
+        margin: 10px;
+      }
+      nav h3 {
+        padding-top: 15px;
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+        max-width: 20px;
+      }
+      .logo-sekolah {
+        display: flex;
+      }
+
+      section {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: white;
+        border-bottom: 2px solid #838921;
+        
+      }
+      section h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+      section p {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 60px;
+        max-width: 400px;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      span {
+        font-size: 30px;
+        color: #838921;
+
+        font-family: "Poppins", sans-serif;
+      }
+      section img {
+        width: 400px;
+        height: auto;
+        border-top-left-radius: 90px;
+        border-bottom-left-radius: 90px;
+      }
+      section button {
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 14px;
+        border-radius: 20px;
+        border: 2px solid #838921;
+        background-color: #838921;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        transition: 0.4s;
+      }
+      section button:hover {
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 14px;
+        border-radius: 20px;
+        border: 2px solid #838921;
+        background-color: white;
+        color: orange;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        transition: 0.4s;
+      }
+
+      main {
+        background-color: #838921;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .main-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-div {
+        width: 100px;
+        height: 100px;
+        background-color: #838921;
+        margin: 15px;
+        border-radius: 90px;
+        margin-top: 30px;
+      }
+      .olahraga {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        margin: 20px;
+        border-radius: 90px;
+        margin-top: 30px;
+        border: 3px solid black;
+      }
+      .card {
+        background-color: white;
+        margin-bottom: 8px;
+        max-width: 500px;
+        margin-left: 100px;
+        display: flex;
+        border-radius: 15px;
+        box-shadow: 8px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+      .card-child {
+        font-family: "Poppins", sans-serif;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+      }
+      .card button {
+        padding: 0px;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-top: 15px;
+        background-color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: orange;
+        transition: 0.4s;
+      }
+      .card button:hover {
+        padding: 5px;
+        border: 2px solid #838921;
+        border-radius: 10px;
+        margin-top: 15px;
+        background-color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: orange;
+        transition: 0.4s;
+      }
+      .card p {
+        margin-top: 15px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #838921;
+        border-top: 20px #838921 solid;
+        align-items: left;
+        margin-top: 50px;
+      }
+      .card-one {
+        display: flex;
+        background-color: #838921;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 700px;
+        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: "Poppins", sans-serif;
+        border-bottom: 2px solid black;
+      }
+      .card-two {
+        display: flex;
+        background-color: #838921;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 700px;
+        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: "Poppins", sans-serif;
+      }
+      .card-one img {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 90px;
+        padding: 10px;
+        margin: 10px;
+        margin-right: 40px;
+      }
+      .card-two img {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 90px;
+        padding: 10px;
+        margin: 10px;
+        margin-right: 40px;
+      }
+      .media-sosial {
+        display: flex;
+        flex-direction: row;
+        width: 20px;
+        height: 20px;
+        justify-content: space-between;
+      }
+      .media-sosial img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        transition: 0.4s;
+      }
+      .media-sosial img:hover {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 15px;
+        background-color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: #838921;
+        transition: 0.4s;
+      }
+      .card-one h3 {
+        margin-bottom: 10px;
+      }
+      .card-one p {
+        margin-bottom: 20px;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+    
+
+      @media screen and (min-width: 1000px) {
+        header {
+          background-color: #838921;
+          border-bottom: solid #838921 6px;
+          border-right: #838921 solid 6px;
+        }
+        nav {
+          display: flex;
+          justify-content: space-between;
+        }
+        .logo-sekolah img {
+          width: 80px;
+          height: 80px;
+          margin: 20px;
+        }
+        .hamburger {
+          width: 42px;
+          height: 45px;
+          margin: 10px;
+          display: none;
+        }
+        nav h3 {
+          font-size: 28px;
+          padding-top: 25px;
+          font-family:
+            "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          color: white;
+          max-width: 20px;
+        }
+        .logo-sekolah {
+          display: flex;
+        }
+        nav ul {
+          display: flex;
+          list-style: none;
+          gap: 40px;
+          margin-top: 50px;
+          margin-right: 20px;
+        }
+        ul li a {
+          text-decoration: none;
+          color: white;
+          background-color: #838921;
+          padding: 5px;
+          border-radius: 12px;
+          font-family: "Poppins", sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          transition: 0.4s;
+        }
+        ul li a:hover {
+          text-decoration: none;
+          color: white;
+          background-color: white;
+          padding: 5px;
+          border-radius: 12px;
+          font-family: "Poppins", sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          transition: 0.4s;
+        }
+        section {
+          display: flex;
+          padding-top: 60px;
+          padding-bottom: 60px;
+          background: white;
+          border-bottom: 2px solid #838921;
+        }
+        section h1 {
+          font-family: "Poppins", sans-serif;
+          font-size: 23px;
+          margin-left: 40px;
+          margin-top: 30px;
+        }
+        section p {
+          margin-top: 20px;
+          margin-left: 40px;
+          margin-right: 60px;
+          max-width: 400px;
+          font-family: "Poppins", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        span {
+          font-size: 50px;
+          color: white;
+          font-family: "Poppins", sans-serif;
+        }
+        section img {
+          width: 600px;
+          height: auto;
+          border-top-left-radius: 90px;
+          border-bottom-left-radius: 90px;
+        }
+        section button {
+          margin-top: 40px;
+          margin-left: 40px;
+          padding: 15px;
+          border-radius: 20px;
+          border: 3px solid #838921;
+          background-color: #838921;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          transition: 0.4s;
+          font-size: 20px;
+        }
+        section button:hover {
+          margin-top: 40px;
+          margin-left: 40px;
+          padding: 15px;
+          border-radius: 20px;
+          border: 3px solid #838921;
+          background-color: white;
+          color: orange;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          transition: 0.4s;
+          font-size: 20px;
+        }
+
+        main {
+          background-color: #838921;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .main-parent {
+          display: flex;
+          flex-direction: row;
+        }
+        .image-div {
+          width: 100px;
+          height: 100px;
+          background-color: #838921;
+          margin: 15px;
+          border-radius: 90px;
+          margin-top: 30px;
+        }
+        .olahraga {
+          width: 100px;
+          height: 100px;
+          background-color: rgb(255, 255, 255);
+          margin: 20px;
+          border-radius: 90px;
+          margin-top: 30px;
+          border: 3px solid black;
+        }
+        .card {
+          background-color: white;
+          margin-bottom: 8px;
+          max-width: 500px;
+          margin-left: 100px;
+          display: flex;
+          border-radius: 15px;
+          box-shadow: 8px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+        .card-child {
+          font-family: "Poppins", sans-serif;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 20px;
+        }
+        .card button {
+          padding: 0px;
+          border: 2px solid white;
+          border-radius: 10px;
+          margin-top: 15px;
+          background-color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          color: #838921;
+          transition: 0.4s;
+        }
+        .card button:hover {
+          padding: 5px;
+          border: 2px solid #838921;
+          border-radius: 10px;
+          margin-top: 15px;
+          background-color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          color: #838921;
+          transition: 0.4s;
+        }
+        .card p {
+          margin-top: 15px;
+        }
+
+        footer {
+          display: flex;
+          flex-direction: column;
+          background-color: #838921;
+          border-top: 20px #838921 solid;
+          align-items: left;
+        }
+        .card-one {
+          display: flex;
+          background-color: #838921;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          width: 700px;
+          padding: 20px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          font-family: "Poppins", sans-serif;
+          border-bottom: 2px solid black;
+        }
+        .card-two {
+          display: flex;
+          background-color: #838921;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          width: 700px;
+          padding: 20px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          font-family: "Poppins", sans-serif;
+        }
+        .card-one img {
+          width: 50px;
+          height: 50px;
+          background-color: white;
+          border-radius: 90px;
+          padding: 10px;
+          margin: 10px;
+          margin-right: 40px;
+        }
+        .card-two img {
+          width: 50px;
+          height: 50px;
+          background-color: white;
+          border-radius: 90px;
+          padding: 10px;
+          margin: 10px;
+          margin-right: 40px;
+        }
+        .media-sosial {
+          display: flex;
+          flex-direction: row;
+          width: 20px;
+          height: 20px;
+          justify-content: space-between;
+        }
+        .media-sosial img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 20px;
+          transition: 0.4s;
+        }
+        .media-sosial img:hover {
+          width: 50px;
+          height: 50px;
+          padding: 5px;
+          border-radius: 10px;
+          margin-top: 15px;
+          background-color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          color: orange;
+          transition: 0.4s;
+        }
+        .card-one h3 {
+          margin-bottom: 10px;
+        }
+        .card-one p {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-sekolah">
+          <img src="./logo (4).png" alt="logo" />
+          <h3>Cartenz school</h3>
+        </div>
+        <img src="menus.png" alt="hamburger menu" class="hamburger" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Program Akademik &DownArrowBar; </a></li>
+          <li><a href="#">Fasilitas</a></li>
+          <li><a href="#">Galeri</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="sec-one">
+        <h1>Welcome to<br /><span>Cartenz school</span></h1>
+        <p>
+          Mewujudkan generasi cerdas, berkarakter, dan siap menghadapi masa
+          depan.
+        </p>
+        <button>Daftar Sekarang </button>
+      </div>
+      <div class="sec-two">
+        <img src="./gambar sekolah.jpg" alt="student" />
+      </div>
+    </section>
+
+    <main>
+      <div class="main-parent">
+        <div class="card">
+          <img
+            src="./akademik.jpg"
+            alt="akademik"
+            class="image-div"
+          />
+          <div class="card-child">
+            <p>
+              Kurikulum berkualitas dengan<br />
+              metode pembelajaran inovatif<br />
+              untuk prestasi terbaik.
+            </p>
+            <button>Selengkapnya </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src=".//olgar.jpg"
+            alt="olahraga"
+            class="olahraga"
+          />
+          <div class="card-child">
+            <p>
+              Mengembangkan potensi siswa<br />
+              melalui berbagai kegiatan<br />
+              olahraga dan kompetisi.
+            </p>
+            <button>Selengkapnya </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./seni.png"
+            alt="seni"
+            class="image-div"
+          />
+          <div class="card-child">
+            <p>
+              Mendukung kreativitas dan bakat<br />
+              siswa di bidang seni dan budaya<br />
+              secara profesional.
+            </p>
+            <button>Selengkapnya </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="card-one">
+        <img src="./location.jpg" alt="pin" />
+        <div class="card-one-child">
+          <h3>Alamat Sekolah</h3>
+          <p>
+            Jl. Pendidikan No. 123 Kota Cerdas, <br />
+            Kec. Maju, Prov. Indonesia 12345
+          </p>
+        </div>
+      </div>
+      <div class="card-one">
+        <img src="./tel.jpg" alt="telephone" />
+        <div class="card-one-child">
+          <h3>Hubungi Kami</h3>
+          <p>(021) 1234 5678 | info@jayaschool.sch.id</p>
+        </div>
+      </div>
+      <div class="card-two">
+        <img src="./share.png" alt="share" />
+        <div class="card-one-child">
+          <h3>Tautan Media Sosial</h3>
+          <div class="media-sosial">
+            <img src="./face.jpg" alt="Facebook" />
+            <img src="./ig.jpg" alt="Instagram" />
+            <img src="./you.png" alt="Youtube" />
+            <img src="./tiktok.jpg" alt="Tiktok" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
